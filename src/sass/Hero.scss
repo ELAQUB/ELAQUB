@@ -1,15 +1,19 @@
 @import '../App.scss';
 
-main{
-    background: transparent;
-    font-family: $main-font;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 2.5rem;
-    opacity: 0;
-    -webkit-animation: fadeIn 1s both;
-    animation: fadeIn 1s both;
+.hero{
+    position: relative;
+    padding: 0 0 11rem 0;
+
+    main{
+        background: transparent;
+        font-family: $main-font;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 2.5rem;
+        opacity: 0;
+        -webkit-animation: fadeIn 1s both;
+        animation: fadeIn 1s both;
 
     @-webkit-keyframes fadeIn {
         0% {
@@ -44,7 +48,7 @@ main{
         }
         h2{
             font-size: $extra-large-text;
-
+            
             span{
                 color: $accent-color;
             }
@@ -56,7 +60,7 @@ main{
 
         label{
             position: relative;
-
+            
             input, button{
                 outline: none;
                 border: none;
@@ -98,14 +102,15 @@ main{
     display: flex;
     width: calc(($width) * 0.04);
     position: absolute;
-    top: calc(($height) * 0.85);
+    top: calc(($height) * 0.77);
     left: calc(($width) * 0.48);
     animation: bounce 2s infinite;
+    z-index: 1;
 
-
+    
     @keyframes bounce {
         0% {
-          transform: translateY(0);
+            transform: translateY(0);
         }
         50% {
           transform: translateY(-10px);
@@ -113,5 +118,6 @@ main{
         100% {
           transform: translateY(0);
         }
-      }
+    }
+}
 }

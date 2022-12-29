@@ -2,6 +2,7 @@ import React from 'react'
 import '../sass/Landing.scss'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
+import Program from '../components/Program'
 
 const Landing = () => {
   return (
@@ -9,7 +10,8 @@ const Landing = () => {
         <Navbar/>
 
         <Hero/>
-        
+
+        <Program/>
     </div>
   )
 }

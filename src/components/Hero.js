@@ -14,7 +14,7 @@ const Hero = () => {
     }, []);
 
   return (
-    <div>
+    <div className='hero'>
         <main>
             <div className="text" ref={textRef}>
                 <small>

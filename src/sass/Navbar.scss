@@ -6,6 +6,7 @@ header{
     justify-content: space-between;
     width: $width;
     padding: 1rem 3rem;
+    position: relative;
 
     img{
         width: calc(($width) * 0.3);
@@ -45,16 +46,17 @@ header{
             display: flex;
             flex-direction: column;
             padding: 0.5rem;
-            background: $bg;
+            background: $misc-three;
             transition: 1s ease-in-out;
+            z-index: 1;
 
             .sib{
-                color: $secondary-color;
+                // color: $secondary-color;
                 padding: 0.5rem 0;
 
                 &:hover{
                     border: none;
-                    color: $misc-three;
+                    color: $misc-five;
                 }
             }
         }
