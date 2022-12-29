@@ -1,0 +1,62 @@
+@import "../App.scss";
+   
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: $width;
+    padding: 1rem 0;
+
+    img{
+        width: calc(($width) * 0.3);
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        position: relative;
+        font-size: $text-size;
+        font-family: $sub-font;
+
+        .link{
+            color: $misc-three;
+            text-decoration: none;
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+
+            &:hover{
+                color: $misc-five;
+                i{
+                    transition: ease-out 1s;
+                    transform: rotate(90deg);
+                    margin-left: 0.5rem;
+                }
+            }
+
+        }
+
+        .navbar{
+            position: absolute;
+            top: 1.5rem;
+            left: 6rem;
+            width: $box-width;
+            border-radius: $border-radius;
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem;
+            background: $misc-five;
+
+            .sib{
+                color: $secondary-color;
+                padding: 0.5rem 0;
+
+                &:hover{
+                    border: none;
+                    color: $misc-three;
+                }
+            }
+        }
+    }
+}
+
