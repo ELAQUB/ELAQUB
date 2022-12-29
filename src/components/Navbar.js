@@ -13,7 +13,6 @@ const Navbar = () => {
       };
     
       const handleMouseLeave = (event) => {
-        // Check if the mouse left the nav or one of its children
         if (!navRef.current || !navRef.current.contains(event.relatedTarget)) {
           setOpen(false);
         }
@@ -37,6 +36,8 @@ const Navbar = () => {
             )}
             <Link to='' className={`link`}> Blog </Link>
         </nav>
+
+        <Link to='' className={`sign`}>Get started</Link>
 
     </header>
   )

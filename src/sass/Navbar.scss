@@ -3,9 +3,9 @@
 header{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: $width;
-    padding: 1rem 0;
+    padding: 1rem 3rem;
 
     img{
         width: calc(($width) * 0.3);
@@ -19,16 +19,16 @@ header{
         font-family: $sub-font;
 
         .link{
-            color: $misc-three;
+            color: $bg;
             text-decoration: none;
             padding: 0 1rem;
             display: flex;
             align-items: center;
 
             &:hover{
-                color: $misc-five;
+                color: $misc-four;
                 i{
-                    transition: ease-out 1s;
+                    transition: ease-out .5s;
                     transform: rotate(90deg);
                     margin-left: 0.5rem;
                 }
@@ -41,11 +41,12 @@ header{
             top: 1.5rem;
             left: 6rem;
             width: $box-width;
-            border-radius: $border-radius;
+            border-radius: $small-border-radius;
             display: flex;
             flex-direction: column;
             padding: 0.5rem;
-            background: $misc-five;
+            background: $bg;
+            transition: 1s ease-in-out;
 
             .sib{
                 color: $secondary-color;
@@ -56,6 +57,20 @@ header{
                     color: $misc-three;
                 }
             }
+        }
+    }
+
+    .sign{
+        padding: 0.5rem 1.3rem;
+        background: $accent-color;
+        border-radius: $border-radius;
+        color: $secondary-color;
+        font-family: $sub-font;
+        font-size: $text-size;
+        text-decoration: none;
+
+        &:hover{
+            background-color: $border-color;
         }
     }
 }

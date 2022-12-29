@@ -1,0 +1,117 @@
+@import '../App.scss';
+
+main{
+    background: transparent;
+    font-family: $main-font;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2.5rem;
+    opacity: 0;
+    -webkit-animation: fadeIn 1s both;
+    animation: fadeIn 1s both;
+
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 20rem, 0);
+            transform: translate3d(0, 20rem, 0);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+        }
+        @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 20rem, 0);
+            transform: translate3d(0, 20rem, 0);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    .text{
+        small{
+            color: $accent-color;
+            font-weight: 700;
+            letter-spacing: 0.3rem;
+        }
+        h2{
+            font-size: $extra-large-text;
+
+            span{
+                color: $accent-color;
+            }
+        }
+        p{
+            font-size: $text-size;
+            padding: 2rem 0;
+        }
+
+        label{
+            position: relative;
+
+            input, button{
+                outline: none;
+                border: none;
+                resize: none;
+                border: none;
+            }
+            #email{
+                width: calc(($width) * 0.6);
+                padding: 0.8rem;
+                border-radius: $border-radius;
+                box-shadow:  20px 20px 75px $misc-two,
+                            -20px -20px 75px $misc-three;
+                background: $secondary-color;
+                font-family: $sub-font;
+                font-size: $text-size;
+            }
+            button{
+                background: $accent-color;
+                height: $button-height;
+                width: $button-width;
+                border-radius: $radius;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: -0.2rem;
+                left: 88%;
+                cursor: pointer;
+
+                img{
+                    width: calc(($button-width) * 0.4);
+                }
+            }
+        }
+    }
+}
+
+#mouse{
+    display: flex;
+    width: calc(($width) * 0.04);
+    position: absolute;
+    top: calc(($height) * 0.85);
+    left: calc(($width) * 0.48);
+    animation: bounce 2s infinite;
+
+
+    @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+}
