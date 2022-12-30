@@ -9,7 +9,7 @@ header{
     position: relative;
 
     img{
-        width: calc(($width) * 0.3);
+        width: calc(($width) * 0.4);
     }
 
     nav{
@@ -49,14 +49,15 @@ header{
             background: $misc-three;
             transition: 1s ease-in-out;
             z-index: 1;
-
+            // clip-path: polygon(100% 100%, 0 100%, 0 8%, 9% 8%, 16% 0, 23% 8%, 100% 8%);
+            
             .sib{
                 // color: $secondary-color;
                 padding: 0.5rem 0;
 
                 &:hover{
                     border: none;
-                    color: $misc-five;
+                    color: $secondary-color;
                 }
             }
         }

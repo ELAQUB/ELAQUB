@@ -1,7 +1,19 @@
 @import "../App.scss";
 
-.landing{
-    height: $height;
-    width: $width;
-    background-color: $secondary-color;
+@mixin light-mode{
+    .landing{
+        height: $height;
+        width: $width;
+        background-color: $secondary-color;
+        color: $primary-color;
+    }
+}
+
+@mixin dark-mode{
+    .landing{
+        height: $height;
+        width: $width;
+        background-color: $dark-secondary-color;
+        color: $dark-primary-color;
+    }
 }

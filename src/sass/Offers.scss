@@ -1,0 +1,57 @@
+@import '../App.scss';
+
+.offers{
+    background: $secondary-color;
+    font-family: $main-font;
+    padding: 1.5rem 2rem;
+    position: relative;
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        justify-content: space-around;
+
+        small{
+            color: $accent-color;
+            word-spacing: 0.3rem;
+            font-weight: 700;
+        }
+        h2{
+            font-size: $large-text;
+
+            span{
+                color: $accent-color;
+            }
+        }
+        p{
+            font-size: $text-size;
+        }
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 0.5rem;
+        place-items: center;
+        width: $width;
+        padding: 3rem 0;
+
+        .card{
+            img{
+                height: calc(($box-height) * 0.7);
+                width: calc(($width) * 0.6);
+                object-fit: cover;
+                border-radius: $small-border-radius;
+            }
+
+            h4{
+                font-size: $big-text-size;
+            }
+            p{
+                font-size: $small-text;
+                width: calc(($width) * 0.6);
+            }
+        }
+    }
+}

@@ -9,6 +9,18 @@
     align-items: center;
     justify-content: space-between;
     width: $width;
+    transform: translateX(-100%);
+    animation: slideIn 3s forwards;
+    animation-fill-mode: forwards;
+
+    @keyframes slideIn {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
 
     .text{
         display: flex;

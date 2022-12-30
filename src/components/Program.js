@@ -1,12 +1,33 @@
 import React from 'react'
+import { useEffect, useRef } from 'react';
 import '../sass/Program.scss'
 import bulb from '../assets/images/bulb.png'
 import people from '../assets/images/people.png'
 import book from '../assets/images/book.png'
 
 const Program = () => {
+
+    const divRef = useRef(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+        const elementTop = divRef.current.getBoundingClientRect().top;
+        const elementBottom = divRef.current.getBoundingClientRect().bottom;
+
+        if (elementTop <= window.innerHeight && elementBottom >= 0) {
+            divRef.current.classList.add('program');
+        }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+        window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
   return (
-    <div className='program'>
+    <div className='program' ref={divRef}>
         <div className="text">
             <h2>Our Program</h2> <br />
 

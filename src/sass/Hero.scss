@@ -2,7 +2,7 @@
 
 .hero{
     position: relative;
-    padding: 0 0 11rem 0;
+    padding: 0 0 10rem 0;
 
     main{
         background: transparent;
@@ -12,8 +12,8 @@
         justify-content: space-around;
         padding: 0 2.5rem;
         opacity: 0;
-        -webkit-animation: fadeIn 1s both;
-        animation: fadeIn 1s both;
+        -webkit-animation: fadeIn 3s both;
+        animation: fadeIn 3s both;
 
     @-webkit-keyframes fadeIn {
         0% {

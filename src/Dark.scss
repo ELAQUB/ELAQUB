@@ -10,27 +10,15 @@
     box-sizing: border-box;
 }
 
-//light mode
-$primary-color: #0e0e0e;
-$secondary-color: #ebebeb;
+$primary-color: #f1f1f1;
+$secondary-color: #141414;
 $accent-color: #06703a;
 $border-color: #088a47;
-$bg: #5a5b5a;
-$misc-two: #f4f4f4;
-$misc-three: #cfcfcf;
-$misc-four: #2b2b2b;
-$misc-five: #3b3c3c;
-
-//dark mode
-$dark-primary-color: #f1f1f1;
-$dark-secondary-color: #141414;
-$dark-accent-color: #06703a;
-$dark-border-color: #088a47;
-$dark-bg: #a5a4a5;
-$dark-misc-two: #0b0b0b;
-$dark-misc-three: #303030;
-$dark-misc-four: #d4d4d4;
-$dark-misc-five: #c4c3c3;
+$bg: #a5a4a5;
+$misc-two: #0b0b0b;
+$misc-three: #303030;
+$misc-four: #d4d4d4;
+$misc-five: #c4c3c3;
 
 
 // $large-image-width: ;
@@ -55,7 +43,7 @@ $sub-font: 'Hind Madurai', sans-serif;
 
 
 .App{
-    background: $secondary-color;
+    background: $primary-color;
     height: $height;
 }
 
