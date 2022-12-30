@@ -1,0 +1,131 @@
+@import '../App.scss';
+
+.connect{
+    position: relative;
+    width: $width;
+    height: calc(($height) + 5rem);
+    padding: 1rem;
+    background: url(../assets/images/rounds.svg) $secondary-color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+
+    .text{
+        width: $width;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        small{
+            color: $accent-color;
+            word-spacing: 0.3rem;
+            font-weight: 700;
+        }
+        h2{
+            font-size: $large-text;
+
+            span{
+                color: $accent-color;
+            }
+        }
+        p{
+            font-size: $text-size;
+        }
+    }
+
+    .container{
+        width: $width;
+        height: $height;
+        position: relative;
+        background: url(../assets/images/map.png) no-repeat center;
+        background-size: 40rem;
+        display: grid;
+        place-items: center;
+        
+        .center{
+            height: $box-height;
+            width: $box-width;
+            border-radius: $border-radius;
+            background: $border-color url(../assets/images/squig.svg);
+        }
+
+        .left, .right{
+            position: absolute;
+        }
+        
+        .left{
+            height: $small-box-height;
+            width: $small-box-width;
+            background: $misc-four url(../assets/images/squig.svg);
+            border-radius: $border-radius;
+            top: calc(($height) * 0.3);
+            left: calc(($width) * 0.15);
+        }
+
+        .right{
+            height: $small-box-height;
+            width: $small-box-width;
+            background: $misc-five url(../assets/images/squig.svg);
+            border-radius: $small-border-radius;
+            top: calc(($height) * 0.4);
+            left: calc(($width) * 0.8);
+        }
+    }
+
+    .circles{
+        position: absolute;
+        height: $height;
+        width: $width;
+        top: 0;
+        // background: $accent-color;
+
+        .one, .two, .three, .four, .five, .six, .seven{
+            position: absolute;
+            border: 0.05rem $border-color solid;
+            border-radius: $radius;
+        }
+
+        .one, .two, .three{
+            height: $mid-box-height;
+            width: $mid-box-width;
+            background: $misc-two;
+        }
+
+        .four, .five, .six, .seven{
+            height: $small-box-height;
+            width: $small-box-width;
+            background: $misc-three;
+        }
+
+        .one{
+            top: calc(($height) * 0.4);
+            left: calc(($width) * 0.45);
+        }
+        .two{
+            top: calc(($height) * 0.37);
+            left: calc(($width) * 0.2);
+        }
+        .three{
+            top: calc(($height) * 0.6);
+            left: calc(($width) * 0.7);
+        }
+        .four{
+            top: calc(($height) * 0.73);
+            left: calc(($width) * 0.465);
+        }
+        .five{
+            top: calc(($height) * 0.2);
+            left: calc(($width) * 0.8);
+        }
+        .six{
+            top: calc(($height) * 0.6);
+            left: calc(($width) * 0.27);
+        }
+        .seven{
+            top: calc(($height) * 0.8);
+            left: calc(($width) * 0.6);
+        }
+    }
+}

@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import Program from '../components/Program'
 import Offers from '../components/Offers'
 import '../App.scss'
+import Connect from '../components/Connect'
 
 const Landing = () => {
   return (
@@ -16,6 +17,8 @@ const Landing = () => {
         <Program/>
 
         <Offers/>
+
+        <Connect/>
 
     </div>
   )
