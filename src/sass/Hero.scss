@@ -171,6 +171,7 @@
         #mouse{
             width: calc(($width) * 0.2);
             top: calc(($height) * 0.9);
+            left: calc(($width) * 0.4);   
         }
     }
 }

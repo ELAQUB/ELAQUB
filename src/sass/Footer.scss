@@ -212,5 +212,65 @@
     }
 }
 @media screen and (min-width: 200px) and (max-width: 767px) {
-    
+    .footer{
+
+        .signup{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 2rem;
+
+            h2{
+                font-size: $big-text-size;
+            }
+
+            label{
+
+                #email{
+                    width: calc(($width) * 1)
+                }
+                button{
+                    left: calc(($width) * 0.8);
+                }
+            }
+        }
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+
+            .text{
+                width: $width;
+                img{
+                    width: calc(($width) * 0.5);
+                }
+            }
+
+            .social{
+                
+                nav{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: $box-height;
+                    font-size: $big-text-size;
+
+                    .navbar{
+                        width: calc(($box-width) * 0.8);
+                        left: calc(($width) * 0.4);
+                    }
+                }
+
+                .icon{
+                    padding: 1rem 0;
+                }
+            }
+        }
+        .rights{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }

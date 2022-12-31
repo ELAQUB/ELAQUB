@@ -40,26 +40,26 @@ const Footer = () => {
                 </p>
             </div>
 
-                <div className="social">
-                    <nav>
-                        <Link to='/about' className={`link`}>About</Link>
-                        <Link className={`link`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Courses <i class="fa-solid fa-chevron-right"></i></Link>
-                            {open && (
-                                <div className="navbar" ref={navRef} onMouseLeave={handleMouseLeave}>
-                                    <Link to='/' className={`link sib`}>Graphic Design</Link>
-                                    <Link to='/' className={`link sib`}>Copy Writing</Link>
-                                    <Link to='/' className={`link sib`}>Web development</Link>
-                                </div>
-                            )}
-                        <Link to='/' className={`link`}>Blog</Link>
-                    </nav>
+            <div className="social">
+                <nav>
+                    <Link to='/about' className={`link`}>About</Link>
+                    <Link className={`link`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Courses <i class="fa-solid fa-chevron-right"></i></Link>
+                        {open && (
+                            <div className="navbar" ref={navRef} onMouseLeave={handleMouseLeave}>
+                                <Link to='/' className={`link sib`}>Graphic Design</Link>
+                                <Link to='/' className={`link sib`}>Copy Writing</Link>
+                                <Link to='/' className={`link sib`}>Web development</Link>
+                            </div>
+                        )}
+                    <Link to='/' className={`link`}>Blog</Link>
+                </nav>
 
-                    <div className="icon">
-                        <a href="https://www.facebook.com/elaqub" target="_blank"><div className="circle"><i class="fa-brands fa-facebook-f fa-2x"></i></div></a>
-                        <a href="/"><div className="circle" target="_blank"><i class="fa-brands fa-youtube fa-2x"></i></div></a>
-                        <a href="https://www.instagram.com/elaqub/" target="_blank"><div className="circle"><i class="fa-brands fa-instagram fa-2x"></i></div></a>
-                    </div>
+                <div className="icon">
+                    <a href="https://www.facebook.com/elaqub" target="_blank"><div className="circle"><i class="fa-brands fa-facebook-f fa-2x"></i></div></a>
+                    <a href="/"><div className="circle" target="_blank"><i class="fa-brands fa-youtube fa-2x"></i></div></a>
+                    <a href="https://www.instagram.com/elaqub/" target="_blank"><div className="circle"><i class="fa-brands fa-instagram fa-2x"></i></div></a>
                 </div>
+            </div>
         </footer>
 
         <hr />
