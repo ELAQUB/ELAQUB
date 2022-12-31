@@ -132,12 +132,21 @@
     
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    main{
+    .hero{
+        background: $secondary-color url(../assets/images/heroimg.png) no-repeat center;
 
-        .pict{
-            img{
-                display: none;
+        main{
+            
+            .pict{
+                img{
+                    display: none;
+                }
             }
+        }
+        #mouse{
+            width: calc(($width) * 0.1);
+            top: calc(($height) * 0.35);
+            left: calc(($width) * 0.43);   
         }
     }
 }
@@ -149,6 +158,10 @@
             background-size: cover;
 
             .text{
+
+                h2{
+                    font-size: $large-text;
+                }
 
 
                 label{
@@ -169,9 +182,9 @@
         }
 
         #mouse{
-            width: calc(($width) * 0.2);
-            top: calc(($height) * 0.9);
-            left: calc(($width) * 0.4);   
+            width: calc(($width) * 0.16);
+            top: calc(($height) * 0.53);
+            left: calc(($width) * 0.43);   
         }
     }
 }

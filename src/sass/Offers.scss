@@ -65,6 +65,13 @@
 @media screen and (min-width: 200px) and (max-width: 767px) {
     .offers{
 
+        .text{
+
+            h2{
+                font-size: $large-text;
+            }
+        }
+
         .container{
 
             .card{

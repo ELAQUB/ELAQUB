@@ -44,7 +44,7 @@ const Navbar = () => {
 
       {/* for mobile menu */}
 
-      <button className="mobile" onClick={() => setOpenMenu(!openMenu)}>Open</button>
+      <button className="mobile" onClick={() => setOpenMenu(!openMenu)}>Menu</button>
           {openMenu &&(
               <nav className="mobilemenu">
                 <Link to='/about' className={`link`}>About</Link>

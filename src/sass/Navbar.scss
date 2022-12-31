@@ -85,6 +85,18 @@ header{
 
     //for mobile menu
 
+    .mobile{
+        outline: none;
+        border: none;
+        font-family: $sub-font;
+        color: $primary-color;
+        border-bottom: 0.06rem solid $border-color;
+
+        &:visited{
+            color: $misc-three;
+        }
+    }
+
     .mobilemenu{
         display: flex;
         flex-direction: column;

@@ -81,6 +81,10 @@
 
         .text{
             width: $width;
+
+            h2{
+                font-size: $large-text;
+            }
         }
     }
 }
