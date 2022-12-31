@@ -38,6 +38,8 @@ const Footer = () => {
                     aimed at giving out the best forms of self development principles to Nigerian
                     citizens.
                 </p>
+
+                <p>For more enquiries, mail us at; <a href="mailto:mailelaqub@gmail.com">mailelaqub@gmail.com</a></p>
             </div>
 
             <div className="social">

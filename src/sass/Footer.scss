@@ -80,9 +80,16 @@
             justify-content: flex-start;
             width: calc(($width) * 0.45);
             font-size: $text-size;
+            font-family: $main-font;
 
             img{
                 width: calc(($width) * 0.35);
+            }
+
+            p{
+                a{
+                    color: $accent-color;
+                }
             }
 
         }
