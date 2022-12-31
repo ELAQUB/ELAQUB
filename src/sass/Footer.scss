@@ -1,0 +1,216 @@
+@import '../App.scss';
+
+.footer{
+    background: $secondary-color;
+    padding: 2rem;
+    width: $width;
+    font-family: $main-font;
+    position: relative;
+
+    .signup{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: $misc-three url(../assets/images/stroke.svg);
+        border-radius: $border-radius;
+        padding: 2rem 0;
+        position: relative;
+
+        h2{
+            font-size: $large-text;
+        }
+
+        span{
+            color: $accent-color;
+        }
+
+        label{
+            position: relative;
+            
+            input, button{
+                outline: none;
+                border: none;
+                resize: none;
+                border: none;
+            }
+            #email{
+                width: calc(($width) * 1.5);
+                padding: 0.8rem;
+                border-radius: $border-radius;
+                background: $misc-two;
+                font-family: $sub-font;
+                font-size: $text-size;
+            }
+            button{
+                background: $accent-color;
+                height: $button-height;
+                width: $button-width;
+                border-radius: $radius;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0.46rem;
+                left: calc(($width) * 1.3);
+                cursor: pointer;
+
+                &:hover{
+                    background: $border-color;
+                }
+
+                img{
+                    width: calc(($button-width) * 0.4);
+                }
+            }
+        }
+    }
+
+    footer{
+        width: $width;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        font-family: $sub-font;
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: calc(($width) * 0.45);
+            font-size: $text-size;
+
+            img{
+                width: calc(($width) * 0.35);
+            }
+
+        }
+
+        .social{
+            position: relative;
+            // border: 0.02rem $accent-color solid;
+            height: $box-height;
+            display: flex;
+            flex-direction: column;
+
+            nav{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 1rem 0;
+
+                .link{
+                    color: $bg;
+            text-decoration: none;
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+
+            &:hover{
+                color: $misc-four;
+                i{
+                    transition: ease-out .5s;
+                    transform: rotate(90deg);
+                    margin-left: 0.5rem;
+                }
+            }
+                }
+            }
+
+            .navbar{
+                position: absolute;
+                top: 2.4rem;
+                left: 6rem;
+                width: $box-width;
+                border-radius: $small-border-radius;
+                display: flex;
+                flex-direction: column;
+                padding: 0.5rem;
+                background: $misc-three;
+                transition: 1s ease-in-out;
+                z-index: 1;
+                // clip-path: polygon(100% 100%, 0 100%, 0 8%, 9% 8%, 16% 0, 23% 8%, 100% 8%);
+                
+                .sib{
+                    // color: $secondary-color;
+                    padding: 0.5rem 0;
+    
+                    &:hover{
+                        border: none;
+                        color: $secondary-color;
+                    }
+                }
+            }
+
+            .icon{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 1rem 0;
+
+                a{
+                    color: $primary-color;
+                    text-decoration: none;
+                }
+
+                .circle{
+                  padding: 0.5rem;
+                  border: 0.04rem $border-color solid;
+                  border-radius: $radius;
+                  height: calc(($small-box-height) * 0.6);
+                  width: calc(($small-box-width) * 0.6);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+
+                  &:hover{
+                    background: $misc-three;
+                    color: $accent-color;
+                  }
+                }
+            }
+        }
+    }
+
+    .rights{
+        width: $width;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0.3rem;
+        font-family: $sub-font;
+
+        a{
+            color: $bg;
+            text-decoration: none;
+
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer{
+
+        .signup{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 2rem;
+
+            label{
+                margin: 1rem 0;
+            }
+        }
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    
+}

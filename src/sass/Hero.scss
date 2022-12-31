@@ -77,6 +77,7 @@
                 background: $secondary-color;
                 font-family: $sub-font;
                 font-size: $text-size;
+                border: 0.02rem solid $border-color;
             }
             button{
                 background: $accent-color;
@@ -87,9 +88,13 @@
                 align-items: center;
                 justify-content: center;
                 position: absolute;
-                top: -0.2rem;
+                top: -0.29rem;
                 left: 88%;
                 cursor: pointer;
+
+                &:hover{
+                    background: $border-color;
+                }
 
                 img{
                     width: calc(($button-width) * 0.4);
@@ -121,4 +126,51 @@
         }
     }
 }
+}
+
+@media screen and (min-width: 1024px){
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    main{
+
+        .pict{
+            img{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .hero{
+        background: $secondary-color url(../assets/images/heroimg.png) no-repeat center;
+
+        main{
+            background-size: cover;
+
+            .text{
+
+
+                label{
+
+                    margin-top: 2rem;
+
+                    #email{
+                        width: calc(($width) * 1);
+                    }
+                }
+            }
+
+            .pict{
+                img{
+                    display: none;
+                }
+            }
+        }
+
+        #mouse{
+            width: calc(($width) * 0.2);
+            top: calc(($height) * 0.9);
+        }
+    }
 }

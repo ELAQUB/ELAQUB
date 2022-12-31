@@ -55,3 +55,27 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px){
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+}
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .offers{
+
+        .container{
+
+            .card{
+
+                img{
+                    width: calc(($width) * 1);
+                }
+                p{
+                    width: calc(($width) * 1);
+                }
+            }
+        }
+    }
+}

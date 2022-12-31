@@ -6,6 +6,7 @@ import Program from '../components/Program'
 import Offers from '../components/Offers'
 import '../App.scss'
 import Connect from '../components/Connect'
+import Footer from '../components/Footer'
 
 const Landing = () => {
   return (
@@ -19,6 +20,8 @@ const Landing = () => {
         <Offers/>
 
         <Connect/>
+
+        <Footer/>
 
     </div>
   )
