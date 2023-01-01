@@ -57,9 +57,9 @@ const Footer = () => {
                 </nav>
 
                 <div className="icon">
-                    <a href="https://www.facebook.com/elaqub" target="_blank"><div className="circle"><i class="fa-brands fa-facebook-f fa-2x"></i></div></a>
-                    <a href="/"><div className="circle" target="_blank"><i class="fa-brands fa-youtube fa-2x"></i></div></a>
-                    <a href="https://www.instagram.com/elaqub/" target="_blank"><div className="circle"><i class="fa-brands fa-instagram fa-2x"></i></div></a>
+                    <a href="https://www.facebook.com/elaqub" target="_blank" rel="noreferrer"><div className="circle"><i class="fa-brands fa-facebook-f fa-2x"></i></div></a>
+                    <a href="/"><div className="circle" target="_blank" rel="noreferrer"><i class="fa-brands fa-youtube fa-2x"></i></div></a>
+                    <a href="https://www.instagram.com/elaqub/" target="_blank" rel="noreferrer"><div className="circle"><i class="fa-brands fa-instagram fa-2x"></i></div></a>
                 </div>
             </div>
         </footer>
