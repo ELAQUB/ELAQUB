@@ -26,7 +26,7 @@ const Register = () => {
             </label>
 
             <select name="courses" id="" className='select'>
-                <option value="" disabled>---</option>
+                <option value="">---</option>
                 <option value="courses">Copy Writing</option>
                 <option value="courses">Graphic design</option>
                 <option value="courses">Web Development</option>

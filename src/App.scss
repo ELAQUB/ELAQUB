@@ -61,6 +61,9 @@ $sub-font: 'Hind Madurai', sans-serif;
 .App{
     background: $secondary-color;
     height: $height;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 1rem;
 }
 
 ::-webkit-scrollbar{

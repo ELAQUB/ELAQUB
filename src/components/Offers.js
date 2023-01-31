@@ -24,17 +24,17 @@ const Offers = () => {
             <div className="card">
                 <img src={design} alt={'graphic design'} /> <br />
                 <h4>Graphic Design</h4> <br />
-                <p>Bala blu broooom army army broooom garri tia-tia from different corn bala army blu.</p>
+                <p>Gives you different insight on how to manipulate pictures and make appealing and aesthetic graphic designs</p>
             </div>
             <div className="card">
                 <img src={web} alt={'web development'} /> <br />
                 <h4>Web Development</h4> <br />
-                <p>Bala blu broooom army army broooom garri tia-tia from different corn bala army blu.</p>
+                <p>Learn the resources and the skills on how to build websites and understand their different uses.</p>
             </div>
             <div className="card">
                 <img src={copy} alt={'Copy writing'} /> <br />
                 <h4>Copy Writing</h4> <br />
-                <p>Bala blu broooom army army broooom garri tia-tia from different corn bala army blu.</p>
+                <p>Understand the principles of captivating and channeling the right idea to any audience you face.</p>
             </div>
         </div>
     </div>

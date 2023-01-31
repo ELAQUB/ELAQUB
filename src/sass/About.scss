@@ -3,6 +3,7 @@
 .about{
     header{
         background: $misc-four;
+        z-index: 999;
 
         .nav{
             nav{
@@ -26,6 +27,45 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        
+        .hero{
+            // background: $misc-three;
+            height: calc(($height) * 0.8);
+            img{
+                width: $width;
+                height: calc(($height) * 0.8);
+                // object-fit: cover;
+                // z-index: -999;
+                // transform: translateZ(-1rem) scale(1);
+            }
+        }
+        .text{
+            // background: $misc-four;
+            width: calc(($width) * 0.97);
+            p{
+                margin: 1rem;
+                font-size: $text-size;
+            }
+        }
+
+        .link{
+            padding: 0.5rem 1.3rem;
+            background: $accent-color;
+            color: $misc-two;
+            align-self: center;
+            text-decoration: none;
+            border-radius: $small-border-radius;
+
+
+            &:hover{
+                background: $border-color;
             }
         }
     }
