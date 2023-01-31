@@ -1,0 +1,32 @@
+@import '../App.scss';
+
+.about{
+    header{
+        background: $misc-four;
+
+        .nav{
+            nav{
+
+                .link{
+
+                    &:hover{
+                        color: $misc-three;
+                    }
+
+                    .active{
+                        color: $misc-three;
+                    }
+                }
+
+                .navbar{
+                    .sib{
+
+                        &:hover{
+                            color: $misc-four;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

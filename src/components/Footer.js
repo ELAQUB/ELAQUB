@@ -26,7 +26,7 @@ const Footer = () => {
             
                 <label>
                     <input type="email" name="email" id="email" placeholder="Get started now!" />
-                    <button type="submit"><img src={plane} alt={'foward key'} /></button>
+                    <Link to='/register'><button type="submit"><img src={plane} alt={'foward key'} /></button></Link>
                 </label>
         </div>
         <footer>
@@ -68,7 +68,7 @@ const Footer = () => {
         <hr />
 
         <div className="rights">
-            <p>Copyright @ 2022 ELAQUB. All rights reserved</p>
+            <p>Copyright @ 2023 ELAQUB. All rights reserved</p>
             <aside>
                 <a href="http://" target="_blank" rel="noopener noreferrer">Privacy Policy</a> &#x2022;
                 <a href="http://" target="_blank" rel="noopener noreferrer"> Terms of Service</a> &#x2022;

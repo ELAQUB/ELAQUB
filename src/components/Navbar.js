@@ -7,6 +7,11 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [openMenu, setOpenMenu] = useState(false);
+    const [activeLink, setActiveLink] = useState(null);
+
+    const handleClick = link => {
+      setActiveLink(link);
+    };
 
     const navRef = useRef(null);
 
@@ -27,7 +32,7 @@ const Navbar = () => {
 
       <div className="nav">
         <nav>
-            <Link to='/about' className={`link`}>About</Link>
+            <Link to='/about' className={`link ${activeLink === '/about' ? 'active' : ''}`} onClick={() => handleClick('/about')}>About</Link>
             <Link className={`link`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Courses <i class="fa-solid fa-chevron-right"></i></Link>
             {open && (
               <div className="navbar" ref={navRef} onMouseLeave={handleMouseLeave}>
@@ -39,7 +44,7 @@ const Navbar = () => {
             <Link to='' className={`link`}> Blog </Link>
         </nav>
 
-        <Link to='' className={`sign`}>Get started</Link>
+        <Link to='/register' className={`sign`}>Get started</Link>
       </div>
 
       {/* for mobile menu */}
@@ -58,7 +63,7 @@ const Navbar = () => {
                   )}
                 <Link to='' className={`link`}> Blog </Link>
 
-                <Link to='' className={`sign`}>Get started</Link>
+                <Link to='/register' className={`sign`}>Get started</Link>
               </nav>
             )
           }

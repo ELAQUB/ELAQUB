@@ -30,6 +30,10 @@ header{
             padding: 0 1rem;
             display: flex;
             align-items: center;
+
+            .active{
+                color: $misc-three;
+            }
             
             &:hover{
                 color: $misc-four;
