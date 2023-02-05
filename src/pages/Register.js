@@ -36,6 +36,8 @@ const Register = () => {
                 <input type="checkbox" name="checkbox" id='checkbox'/>
                 <p>I agree ElaQub would use my details according to its <a href="">policy</a></p>
             </label>
+
+            <button type="submit">Register</button>
         </form>
 
         <Footer/>

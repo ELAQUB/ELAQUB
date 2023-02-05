@@ -28,7 +28,7 @@
                 }
             }
         }
-        
+
         button{
             color: $misc-two;
         }
@@ -37,7 +37,7 @@
     form{
         position: relative;
         width: $width;
-        height: calc(($height) * 0.6);
+        // height: calc(($height) * 0.6);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -109,6 +109,22 @@
             display: flex;
             flex-direction: row;
         }
+
+        button{
+            width: calc(($width) * 0.4);
+            outline: none;
+            border: none;
+            padding: 0.6rem 0;
+            color: $secondary-color;
+            background: $accent-color;
+            border-radius: $small-border-radius;
+            font-family: $main-font;
+            font-size: $text-size;
+
+            &:hover{
+                background: $border-color;
+            }
+        }
     }
 
     .footer{
@@ -160,6 +176,10 @@
             }
 
             select{
+                width: calc(($width) * 0.9);
+            }
+
+            button{
                 width: calc(($width) * 0.9);
             }
         }
