@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import '../sass/Navbar.scss'
 import elaqub from '../assets/images/ELAQUB.png'
 import { Link } from 'react-router-dom'
@@ -8,6 +8,18 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [openMenu, setOpenMenu] = useState(false);
     const [activeLink, setActiveLink] = useState(null);
+
+    useEffect(() => {
+      const handleClickOutside = event => {
+        if (openMenu && navRef.current && !navRef.current.contains(event.target)) {
+          setOpenMenu(false);
+        }
+      };
+      document.addEventListener('click', handleClickOutside);
+      return () => {
+        document.removeEventListener('click', handleClickOutside);
+      };
+    }, [openMenu]);
 
     const handleClick = link => {
       setActiveLink(link);
@@ -49,11 +61,11 @@ const Navbar = () => {
 
       {/* for mobile menu */}
 
-      <button className="mobile" onClick={() => setOpenMenu(!openMenu)}>Menu</button>
+      <button className="mobile" onClick={() => setOpenMenu(!openMenu)}><i className={`fa-solid fa-${openMenu ? 'times' : 'bars'} fa-2x`} /></button>
           {openMenu &&(
-              <nav className="mobilemenu">
+              <nav className={`mobilemenu ${openMenu ? 'open' : ''}`}>
                 <Link to='/about' className={`link`}>About</Link>
-                <Link to='/' className={`link`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Courses <i class="fa-solid fa-chevron-right"></i></Link>
+                <Link to='' className={`link`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Courses <i class="fa-solid fa-chevron-right"></i></Link>
                   {open &&(
                     <div className="navbar" ref={navRef} onMouseLeave={handleMouseLeave}>
                       <Link to='/' className={`link sib`}>Graphic Design</Link>

@@ -133,7 +133,6 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .hero{
-        background: $secondary-color url(../assets/images/heroimg.png) no-repeat center;
 
         main{
             
@@ -152,10 +151,10 @@
 }
 @media screen and (min-width: 200px) and (max-width: 767px) {
     .hero{
-        background: $secondary-color url(../assets/images/heroimg.png) no-repeat center;
 
         main{
             background-size: cover;
+            
 
             .text{
 

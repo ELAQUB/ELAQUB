@@ -29,6 +29,10 @@
                 }
             }
         }
+
+        button{
+            color: $misc-two;
+        }
     }
 
     main{
@@ -66,6 +70,165 @@
 
             &:hover{
                 background: $border-color;
+            }
+        }
+    }
+
+    .vision{
+        position: relative;
+        // width: $width;
+        display: flex;
+        flex-direction: column;
+        font-family: $main-font;
+        color: $secondary-color;
+        background: $accent-color;
+        padding: 0.5rem;
+        margin: 1rem;
+        border-radius: $small-border-radius;
+        text-align: center;
+
+        h1{
+            align-self: center;
+            font-weight: 400;
+        }
+
+        p{
+            padding: 0.5rem 2rem;
+            font-size: $text-size;
+        }
+    }
+
+    .tutors{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        width: $width;
+        background: url(../assets/images/spiral.svg) no-repeat center;
+        background-size: cover;
+        
+        .card{
+            text-align: center;
+
+            p{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: $main-font;
+                font-size: $text-size;
+            }
+        }
+    }
+
+    .benefits{
+        font-family: $main-font;
+        color: $secondary-color;
+        width: $width;
+        margin: 1rem 0;
+
+        h1{
+            text-align: center;
+            color: $primary-color;
+            margin: 1rem 0;
+        }
+
+        .card{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            gap: 1rem;
+            width: $width;
+            padding: 0 0.5rem;
+
+            .container{
+                background: $accent-color;
+                padding: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                border-radius: $small-border-radius;
+
+                h3{
+                    font-size: $big-text-size;
+                    margin: 0.5rem 0;
+                }
+
+                p{
+                    font-size: $text-size;
+                }
+            }
+        }
+    }
+
+    .courses{
+        width: $width;
+        background: $accent-color;
+        display: flex;
+        flex-direction: column;
+        color: $secondary-color;
+        font-family: $main-font;
+
+        h1{
+            align-self: center;
+        }
+
+        .card{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            place-items: center;
+            margin: 1rem 0;
+
+            .container{
+                width: calc(($width) * 0.7);
+                height: calc(($height) * 0.5);
+                display: flex;
+                flex-direction: column;
+                font-size: $text-size;
+
+                p{
+                    align-self: center;
+                }
+
+                img{
+                    width: calc(($width) * 1);
+                    height: calc(($height) * 1);
+                    aspect-ratio: 1/1;
+                    // mix-blend-mode: color-burn;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+
+    .footer{
+        background: $misc-four;
+        color: $secondary-color;
+
+        .signup{
+
+            h2{
+                color: $misc-four;
+            }
+        }
+
+        footer{
+            .social{
+                .link{
+                    color: $misc-two;
+
+                    &:hover{
+                        color: $misc-three;
+                    }
+                }
+                .navbar{
+                    background: $misc-five;
+                }
+            }
+
+            .icon{
+                a{
+                    .circle{
+                        background: $misc-three;
+                    }
+                }
             }
         }
     }

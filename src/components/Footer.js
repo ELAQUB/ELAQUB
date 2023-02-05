@@ -1,13 +1,24 @@
 import React, {useState, useRef} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import '../sass/Footer.scss'
 import plane from '../assets/images/paperplane.png'
 import elaqub from '../assets/images/ELAQUB.png'
 
 
 const Footer = () => {
+    const location = useLocation();
     const [open, setOpen] = useState(false);
     const navRef = useRef(null);
+
+    let text = '';
+
+    if (location.pathname === '/about'){
+        text = <h2>Go ahead, join the maiden <span>waiting list</span>. <br />
+        Get to be <span>the first</span> to register!!!</h2>
+    } else {
+        text = <h2>Join now and start your <span>learning</span>. <br />
+        Get a <span>certificate</span> too!!!</h2>
+    }
 
     const handleMouseEnter = () => {
         setOpen(true);
@@ -21,8 +32,7 @@ const Footer = () => {
   return (
     <div className='footer'>
         <div className="signup">
-            <h2>Join now and start your <span>learning</span>. <br />
-                Get a <span>certificate</span> too!!!</h2>
+            <h2>{text}</h2>
             
                 <label>
                     <input type="email" name="email" id="email" placeholder="Get started now!" />
@@ -31,7 +41,7 @@ const Footer = () => {
         </div>
         <footer>
             <div className="text">
-                <img src={elaqub} alt={'elaqub logo'} />
+                <Link to='/'><img src={elaqub} alt={'elaqub logo'} /></Link>
                 <br />
                 <p>
                     ELAQUB is a fast growing educational platform for Nigerians,
@@ -58,7 +68,7 @@ const Footer = () => {
 
                 <div className="icon">
                     <a href="https://www.facebook.com/elaqub" target="_blank" rel="noreferrer"><div className="circle"><i class="fa-brands fa-facebook-f fa-2x"></i></div></a>
-                    <a href="/"><div className="circle" target="_blank" rel="noreferrer"><i class="fa-brands fa-youtube fa-2x"></i></div></a>
+                    <a href="https://www.youtube.com/channel/UCI3hQVZG1Rz94wccCeOrUlQ"><div className="circle" target="_blank" rel="noreferrer"><i class="fa-brands fa-youtube fa-2x"></i></div></a>
                     <a href="https://www.instagram.com/elaqub/" target="_blank" rel="noreferrer"><div className="circle"><i class="fa-brands fa-instagram fa-2x"></i></div></a>
                     <a href="https://www.linkedin.com/company/elaqub/" target="_blank" rel="noreferrer"><div className="circle"><i class="fa-brands fa-linkedin fa-2x"></i></div></a>
                 </div>

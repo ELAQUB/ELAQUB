@@ -25,7 +25,7 @@ const Hero = () => {
                 </h2>
 
                 <p>
-                    Nigeria's no. 1 growing e-learning platform to get
+                    Africa's fast growing e-learning platform to get
                     you started in your choosen career. 
                 </p>
 
