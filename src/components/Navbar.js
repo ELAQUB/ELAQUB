@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useRef, useEffect } from 'react'
 import '../sass/Navbar.scss'
-import elaqub from '../assets/images/ELAQUB.png'
+import logo from '../assets/images/logo.png'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <header>
 
-      <Link to='/'><img src={elaqub} alt={'Logo'} /></Link>
+      <Link to='/'><img src={logo} alt={'Logo'} /></Link>
 
       <div className="nav">
         <nav>

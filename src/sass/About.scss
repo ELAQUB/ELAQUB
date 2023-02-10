@@ -167,6 +167,7 @@
 
         h1{
             align-self: center;
+            text-align: center;
         }
 
         .card{
@@ -226,6 +227,17 @@
                 a{
                     .circle{
                         background: $misc-three;
+                    }
+                }
+            }
+
+        }
+        .rights{
+
+            aside{
+                a{
+                    &:hover{
+                        color: $misc-three;
                     }
                 }
             }

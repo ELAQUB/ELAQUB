@@ -2,7 +2,7 @@ import React, {useState, useRef} from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import '../sass/Footer.scss'
 import plane from '../assets/images/paperplane.png'
-import elaqub from '../assets/images/ELAQUB.png'
+import logo from '../assets/images/logo.png'
 
 
 const Footer = () => {
@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
         <footer>
             <div className="text">
-                <Link to='/'><img src={elaqub} alt={'elaqub logo'} /></Link>
+                <Link to='/'><img src={logo} alt={'elaqub logo'} /></Link>
                 <br />
                 <p>
                     ELAQUB is a fast growing educational platform for Nigerians,

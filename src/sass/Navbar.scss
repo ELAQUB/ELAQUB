@@ -5,11 +5,11 @@ header{
     align-items: center;
     justify-content: space-between;
     width: $width;
-    padding: 1rem 3rem;
+    padding: 1.5rem 3rem;
     position: relative;
 
     img{
-        width: calc(($width) * 0.4);
+        width: calc(($width) * 0.3);
     }
 
     .nav{
@@ -114,33 +114,33 @@ header{
         top: 4.5rem;
         right: calc(($width) * 0.02);
         z-index: 1;
-        // -webkit-animation: slideInRight 1s ease-in-out;
-        // animation: slideInRight 1s ease-in-out;
+        -webkit-animation: slideInRight 1s ease-in-out;
+        animation: slideInRight 1s ease-in-out;
         transform: translateX(100%);
         transition: all 0.3s ease-out;
 
-        // @-webkit-keyframes slideInRight {
-        //     0% {
-        //     -webkit-transform: translateX(100%);
-        //     transform: translateX(100%);
-        //     visibility: visible;
-        //     }
-        //     100% {
-        //     -webkit-transform: translateX(0);
-        //     transform: translateX(0);
-        //     }
-        //     }
-        //     @keyframes slideInRight {
-        //     0% {
-        //     -webkit-transform: translateX(100%);
-        //     transform: translateX(100%);
-        //     visibility: visible;
-        //     }
-        //     100% {
-        //     -webkit-transform: translateX(0);
-        //     transform: translateX(0);
-        //     }
-        // }
+        @-webkit-keyframes slideInRight {
+            0% {
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            visibility: visible;
+            }
+            100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            }
+            }
+            @keyframes slideInRight {
+            0% {
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            visibility: visible;
+            }
+            100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            }
+        }
         
 
         .navbar{

@@ -160,6 +160,16 @@
                 }
             }
         }
+        .rights{
+
+            aside{
+                a{
+                    &:hover{
+                        color: $misc-three;
+                    }
+                }
+            }
+        }
     }
 }
 

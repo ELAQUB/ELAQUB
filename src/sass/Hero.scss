@@ -88,8 +88,8 @@
                 align-items: center;
                 justify-content: center;
                 position: absolute;
-                top: -0.29rem;
-                left: 88%;
+                top: calc(($height) * -0.007);
+                left: calc(($width) * 0.83);
                 cursor: pointer;
 
                 &:hover{

@@ -40,7 +40,7 @@ const About = () => {
         <div className="vision">
           <h1>Our Vision</h1>
           <p>
-          Our vision is to ensure that the youths of Nigeria do not suffer unemployment or become penniless after 
+          Our vision is to ensure that the youth in Africa do not suffer unemployment or become penniless after 
           graduating from high school or the University. Following the track of this beautiful life-changing 
           opportunity to learn high employability courses, the future of this generation and the next to come will be a 
           better place.
@@ -70,7 +70,7 @@ const About = () => {
               <h3>Get a certificate</h3>
               <p>
                 The fundamental trainning you receive here would leave 
-                you with a valid certificate which would prove your skils,
+                you with a valid certificate which would prove your skills,
                 you can use it as views of your acheivements.
               </p>
             </div>
@@ -93,7 +93,7 @@ const About = () => {
             <div className="container">
               <h3>Access to team members</h3>
               <p>
-                Find diversity in thic cohort and learn to collaborate on
+                Find diversity in this cohort and learn to collaborate on
                 amazing projects with different peoples and culture. Make 
                 new and amazing relationships
               </p>
