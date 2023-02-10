@@ -102,8 +102,6 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         width: $width;
-        background: url(../assets/images/spiral.svg) no-repeat center;
-        background-size: cover;
         
         .card{
             text-align: center;

@@ -19,19 +19,19 @@ const Register = () => {
     const handleSubmit = async (event) => {
       event.preventDefault();
 
+      if (!fullName || !email || !course) {
+          setErrorMessage('Please fill out all the required fields');
+          return;       
+        }
+
         if (!checkbox) {
             setErrorMessage("Please accept the terms and conditions to proceed.");
             return;
         }
 
-        if (!fullName || !email || !course) {
-            setErrorMessage('Please fill out all the required fields');
-            return;       
-        }
-
         try {
           const data = { fullName, email, course };
-          const res=await fetch("https://elaqub-default-rtdb.firebaseio.com",
+          const res=await fetch("https://elaqub-default-rtdb.firebaseio.com/elaqub.json",
             {
               method:'POST',
               headers:{
