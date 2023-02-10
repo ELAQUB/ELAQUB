@@ -31,7 +31,7 @@ const Register = () => {
 
         try {
           const data = { fullName, email, course };
-          const res=await fetch("https://elaqub-default-rtdb.firebaseio.com/elaqub.json",
+          const res=await fetch("https://elaqub-default-rtdb.firebaseio.com",
             {
               method:'POST',
               headers:{
